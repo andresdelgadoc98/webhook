@@ -11,7 +11,7 @@ app.use(bodyParser.text({ limit: '200mb' }));
 
 app.use(cors())
 
-app.use('/api/wells', require('./src/apiServices/wells/Routes'))
+app.use('/api', require('./src/apiServices/applications/Routes'))
 
 
 app.listen(port, function(){
